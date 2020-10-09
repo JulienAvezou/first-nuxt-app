@@ -78,4 +78,9 @@ export default {
   background: orange;
   transition: width .2s ease; 
 }
+
+.btn-advice:focus {
+  outline: none;
+  box-shadow: none;
+}
 </style>

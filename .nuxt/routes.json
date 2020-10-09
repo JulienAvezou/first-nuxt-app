@@ -3,24 +3,28 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/julienavezou/code/JulienAvezou/dummy-projects/first-nux-application/pages/about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_667ab8ac"
   },
   {
     "name": "Advice",
     "path": "/Advice",
     "component": "/Users/julienavezou/code/JulienAvezou/dummy-projects/first-nux-application/pages/Advice/index.vue",
-    "chunkName": "pages/Advice/index"
+    "chunkName": "pages/Advice/index",
+    "_name": "_2adf7b4c"
   },
   {
     "name": "Advice-id",
     "path": "/Advice/:id",
     "component": "/Users/julienavezou/code/JulienAvezou/dummy-projects/first-nux-application/pages/Advice/_id/index.vue",
-    "chunkName": "pages/Advice/_id/index"
+    "chunkName": "pages/Advice/_id/index",
+    "_name": "_389bdf92"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/julienavezou/code/JulienAvezou/dummy-projects/first-nux-application/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_f39ad91e"
   }
 ]

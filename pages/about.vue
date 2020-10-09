@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>This app generates random useful advice for you and allows you to search for the advice you need </p>
+    <p><em>This app generates random useful advice for you and allows you to search for the advice you need.</em></p>
   </div>
 </template>
 

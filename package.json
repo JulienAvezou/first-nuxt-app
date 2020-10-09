@@ -1,0 +1,10 @@
+{
+  "name": "first-nux-application",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "nuxt": "^2.14.6"
+  }
+}

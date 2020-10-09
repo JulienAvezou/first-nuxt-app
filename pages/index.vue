@@ -62,6 +62,7 @@ export default {
 
 <style scoped>
 .btn-advice {
+  width: 15%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -69,5 +70,12 @@ export default {
   border-radius: 8px;
   color: white;
   cursor: pointer;
+  transition: width .2s ease;
+}
+
+.btn-advice:hover {
+  width: 15.1%;
+  background: orange;
+  transition: width .2s ease; 
 }
 </style>

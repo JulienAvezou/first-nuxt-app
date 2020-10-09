@@ -2,12 +2,13 @@
   <div>
     <h2>Welcome to my advice generator</h2>
     <button @click="randomAdvice" class="btn-advice">Click me</button>
-    <p>{{ randadvice }}</p>
+    <Advice :id="randomadvice.id" :advice="randomadvice.advice"/>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import Advice from '../components/Advice';
 export default {
    head () {
     return {
@@ -21,9 +22,12 @@ export default {
       ]
     };
   },
+  components: {
+    Advice
+  },
   data () {
     return {
-      randadvice: {}
+      randomadvice: {}
     }   
   },
   async created() {
@@ -35,7 +39,7 @@ export default {
 
     try {
       const res = await axios.get('https://api.adviceslip.com/advice', config);
-      this.randadvice = res.data.slip.advice;
+      this.randomadvice = res.data.slip;  
     } catch (err) {
         console.log(err)
     }
@@ -50,7 +54,7 @@ export default {
 
         try {
           const res = await axios.get("https://api.adviceslip.com/advice", config);
-          this.randadvice = res.data.slip.advice;       
+          this.randomadvice = res.data.slip;   
         } 
         catch (err) {
           console.log(err)
@@ -77,5 +81,10 @@ export default {
   width: 15.1%;
   background: orange;
   transition: width .2s ease; 
+}
+
+.btn-advice:focus {
+  outline: none;
+  box-shadow: none;
 }
 </style>

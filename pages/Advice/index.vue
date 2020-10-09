@@ -2,7 +2,10 @@
   
   <div>
     <h2>Search for Advice</h2>
-    <SearchAdvice v-on:search-text="searchText" />       
+    <SearchAdvice v-on:search-text="searchText" />    
+    <p v-if="typeof advices === 'undefined'">Sorry can't find any advice for your request. Please search again.</p>
+    <p v-else-if="advices.length > 0">Advice found for you:</p>
+    <p v-else>You can search for advice on this page. Start now...</p>         
     <Advice v-for="advice in advices" :key="advice.id" :id="advice.id" :advice="advice.advice" />
   </div>
 </template>
